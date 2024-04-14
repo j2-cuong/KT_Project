@@ -15,7 +15,9 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
 
+
 export function Home() {
+  
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
@@ -32,15 +34,15 @@ export function Home() {
                 Title chính
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                Content writer
+                Content
               </Typography>
             </div>
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-white px-4 pb-20 pt-4">
+      <section className=" bg-white px-4 pb-20 pt-4" style={{marginTop : "-13rem"}}>
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1">
             {featuresData.map(({ color, title, icon, description }) => (
               <FeatureCard
                 key={title}
